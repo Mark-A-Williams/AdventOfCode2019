@@ -9,8 +9,8 @@ inputFile.close()
 
 result = 0
 
-for i in range(len(input)):
-    moduleMass = int(input[i].rstrip())
+for line in input:
+    moduleMass = int(line.rstrip())
     result += FuelRequired(moduleMass)
 
 print result
