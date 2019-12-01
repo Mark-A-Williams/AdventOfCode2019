@@ -1,7 +1,8 @@
 import numpy as np
 
 def FuelRequired(mass):
-    return np.floor(mass/3)-2
+    fuel = np.floor(mass/3)-2
+    return (fuel + FuelRequired(fuel) if fuel > 0 else 0)
 
 inputFile = open("day1input.txt","r")
 input = inputFile.readlines()
