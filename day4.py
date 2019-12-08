@@ -41,9 +41,6 @@ def o(p):
     if (q[0] == q[1]) and (q[1] != q[2]):
         return True
     return False
-    # s = len(q) - 2
-    # if ((q[s] == q[s + 1])):# and (q[s] != q[s - 1])):
-    #     return True
 
 t = []
 
@@ -57,6 +54,3 @@ for w in range (a, b + 1):
 
 print len(t)
 print t
-
-print o(677789)
-print g(677789)
