@@ -25,6 +25,14 @@ namespace Intcode
             IntcodeProgram = Array.ConvertAll(intcodeProgramAsStrings, s => int.Parse(s));
         }
 
+        public void RunIntcodeProgram()
+        {
+            for (int i = 0; i < IntcodeProgram.Count(); i += 4)
+            {
+                EvaluateOpcode(i);
+            }
+        }
+
         public void EvaluateOpcode(int position)
         {
             var opcode = IntcodeProgram[position];
