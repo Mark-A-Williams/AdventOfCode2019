@@ -6,6 +6,6 @@ namespace Intcode
 {
     public interface IIntcodeService
     {
-        void ImportIntcodeProgam(int dayInput);
+        void ImportIntcodeProgamFromFile(int day);
     }
 }

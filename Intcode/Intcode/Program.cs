@@ -6,6 +6,8 @@ namespace Intcode
     {
         static void Main(string[] args)
         {
+            var intcodeHelper = new IntcodeHelper();
+            Console.WriteLine(intcodeHelper.GetInputFileUri());
         }
     }
 }

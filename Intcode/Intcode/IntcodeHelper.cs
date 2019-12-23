@@ -12,5 +12,10 @@ namespace Intcode
         {
             _intcodeService = new IntcodeService();
         }
+
+        public string GetInputFileUri()
+        {
+            return _intcodeService.BasePath;
+        }
     }
 }

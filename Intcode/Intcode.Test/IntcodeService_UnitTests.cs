@@ -6,9 +6,26 @@ namespace Intcode.Test
 {
     public class IntcodeService_UnitTests
     {
-        [Fact]
-        public void Test1()
+        public IntcodeService Sut { get; set; }
+
+        public IntcodeService_UnitTests()
         {
+            Sut = new IntcodeService();
+
+        }
+
+        [Fact]
+        public void CanImportIntcodeProgramFromFile()
+        {
+            // Arrange
+            var day = 2;
+
+            // Act
+            Sut.ImportIntcodeProgamFromFile(day);
+            var intcodeProgram = Sut.IntcodeProgram;
+
+            // Assert
+            Assert.NotNull(intcodeProgram);
         }
     }
 }
