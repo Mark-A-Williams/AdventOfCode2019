@@ -6,9 +6,6 @@ namespace Intcode
     {
         static void Main(string[] args)
         {
-            IntcodeService _intcodeService = new IntcodeService();
-            _intcodeService.PrintStuff();
-            var test = 0;
         }
     }
 }
