@@ -8,6 +8,7 @@ namespace Intcode
         {
             IntcodeService _intcodeService = new IntcodeService();
             _intcodeService.PrintStuff();
+            var test = 0;
         }
     }
 }
