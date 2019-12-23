@@ -7,7 +7,11 @@ namespace Intcode
         static void Main(string[] args)
         {
             var intcodeHelper = new IntcodeHelper();
-            Console.WriteLine(intcodeHelper.GetInputFileUri());
+            var program = intcodeHelper.GetIntcodeProgram(2);
+            foreach (var command in program)
+            {
+                Console.Write(command + ',');
+            }
         }
     }
 }

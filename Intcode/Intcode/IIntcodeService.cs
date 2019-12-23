@@ -7,5 +7,6 @@ namespace Intcode
     public interface IIntcodeService
     {
         void ImportIntcodeProgamFromFile(int day);
+        void EvaluateOpcode(int position);
     }
 }

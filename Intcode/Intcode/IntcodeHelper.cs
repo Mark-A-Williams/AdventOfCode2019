@@ -13,9 +13,10 @@ namespace Intcode
             _intcodeService = new IntcodeService();
         }
 
-        public string GetInputFileUri()
+        public int[] GetIntcodeProgram(int day)
         {
-            return _intcodeService.BasePath;
+            _intcodeService.ImportIntcodeProgamFromFile(day);
+            return _intcodeService.IntcodeProgram;
         }
     }
 }
